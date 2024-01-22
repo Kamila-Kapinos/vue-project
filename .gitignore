@@ -23,3 +23,6 @@ pnpm-debug.log*
 
 # Prettier configuration file
 .prettierrc.js
+
+# Firebase configuration files
+.firebaserc

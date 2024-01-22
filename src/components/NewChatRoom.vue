@@ -28,10 +28,13 @@ export default {
         createdAt: timestamp(),
       };
       await addDoc(chat);
-      //console.log(chat);
+      console.log(chat);
       message.value = '';
+      if (!error.val) {
+        message.value = '';
+      }
     };
-    return { message, handleSubmit };
+    return { message, handleSubmit, error };
   },
 };
 </script>

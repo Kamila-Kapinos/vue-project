@@ -13,9 +13,9 @@ const firebaseConfig = {
   measurementId: 'G-9NEQD6JS0D',
 };
 
-firebase.initializeApp(firebaseConfig);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 const projectAuth = firebase.auth();
-
 const projectFirestore = firebase.firestore();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
-export { projectFirestore, timestamp, projectAuth };
+export { projectAuth, projectFirestore, timestamp };
+export default firebase.firestore();
